@@ -1,0 +1,11 @@
+{
+  "name": "nvea",
+  "version": "1.0.0",
+  "description": "Create command line tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thebigbot",
+  "license": "ISC"
+}
