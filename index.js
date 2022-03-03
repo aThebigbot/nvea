@@ -1,4 +1,5 @@
 const { args } = require('./src/args')
+const { argv } = require('./src/argv')
 const { command } = require('./src/command')
 
 command("TEST", function(res) {
@@ -6,6 +7,6 @@ command("TEST", function(res) {
 })
 
 args((args) => {
-    console.log(args[0])
+    console.log(argv(2))
 })
 
