@@ -1,12 +1,5 @@
-const { args } = require('./src/args')
-const { argv } = require('./src/argv')
-const { command } = require('./src/command')
+const cmd = require('./src/index')
 
-command("TEST", function(res) {
-    console.log(res.args[0])
+new cmd.Command({ name: 'index' }).on((c) => {
+    console.log(c)
 })
-
-args((args) => {
-    console.log(argv(2))
-})
-
