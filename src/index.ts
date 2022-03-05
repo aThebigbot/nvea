@@ -3,7 +3,7 @@ const { args } = require('./function/args')
 const { argv } = require('./function/argv')
 const { command } = require('./function/command')
 
-module.exports = {
+export {
     args,
     argv,
     command,

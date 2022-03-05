@@ -1,6 +1,6 @@
-const process = require("node:process");
+import process from "node:process";
 
-function command(name, callback) {
+function command(name:string, callback:any) {
  if (process.argv[2] == name) {
      let res = {
          name: process.argv[2],
@@ -10,4 +10,4 @@ function command(name, callback) {
  }
 }
 
-module.exports = { command }
+export { command }
