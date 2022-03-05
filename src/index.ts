@@ -1,7 +1,7 @@
-const Command = require('./class/Command')
-const { args } = require('./function/args')
-const { argv } = require('./function/argv')
-const { command } = require('./function/command')
+import { Command } from './class/Command'
+import { args } from './function/args'
+import { argv } from './function/argv'
+import { command } from './function/command'
 
 export {
     args,

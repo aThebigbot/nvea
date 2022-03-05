@@ -1,4 +1,5 @@
 import { command } from "../function/command";
+import process from "node:process";
 
 let n:any;
 class Command {
@@ -7,12 +8,24 @@ class Command {
     }
     on(callback:any) {
         command(n, (res:any) => {
-            callback(res)
+            let req = {
+                args: function(n: number) {
+                    return process.argv[n];
+                }
+            }
+            callback(res, req)
+
         });
     }
     action(callback:any) {
         command(n, (res:any) => {
-            callback(res)
+            let req = {
+                args: function(n: number) {
+                    return process.argv[n];
+                }
+            }
+            callback(res, req)
+
         });
     }
 }
