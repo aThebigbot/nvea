@@ -1,13 +1,17 @@
-import { command } from "../function/command";
-import process from "node:process";
+import { command } from '../function/command';
+import process from 'node:process';
 
-let n:any;
+let n: any
+let a: any
+
 class Command {
-    constructor({ name }: { name: string }) {
-        n = name;
+    constructor({ name, aliases }: { name: string, aliases: String[] }) {
+        n = name
+        a = aliases
     }
-    on(callback:any) {
-        command(n, (res:any) => {
+
+    on(callback: any) {
+        command(n, a, (res: any) => {
             let req = {
                 args: function(n: number) {
                     return process.argv[n];
@@ -15,18 +19,18 @@ class Command {
             }
             callback(res, req)
 
-        });
+        })
     }
-    action(callback:any) {
-        command(n, (res:any) => {
+
+    action(callback: any) {
+        command(n, a, (res: any) => {
             let req = {
                 args: function(n: number) {
                     return process.argv[n];
                 }
             }
             callback(res, req)
-
-        });
+        })
     }
 }
-export { Command };
+export { Command }

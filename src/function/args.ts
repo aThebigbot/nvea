@@ -1,7 +1,7 @@
-import process from "node:process";
+import process from 'node:process'
 
-function args(n: number) {
-     return process.argv[n];
+async function args(n: number) {
+     return process.argv[n]
 }
 
 export { args }
