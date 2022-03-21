@@ -19,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/Thebigbot0000/nvea/issues"
   },
-  "homepage": "https://github.com/Thebigbot0000/nvea#readme"
+  "homepage": "https://github.com/Thebigbot0000/nvea#readme",
+  "keywords": [
+    "cli",
+    "args",
+    "argv",
+    "command",
+    "nvea",
+    "argument"
+  ]
 }
