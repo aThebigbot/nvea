@@ -1,6 +1,6 @@
 import process from 'node:process';
 
-async function argv(n: number) {
+const argv = async (n: number) => {
     return process.argv[n]
 }
 

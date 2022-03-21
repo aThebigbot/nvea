@@ -12,24 +12,14 @@ class Command {
 
     on(callback: any) {
         command(n, a, (res: any) => {
-            let req = {
-                args: function(n: number) {
-                    return process.argv[n];
-                }
-            }
-            callback(res, req)
+            callback(res)
 
         })
     }
 
     action(callback: any) {
         command(n, a, (res: any) => {
-            let req = {
-                args: function(n: number) {
-                    return process.argv[n];
-                }
-            }
-            callback(res, req)
+            callback(res)
         })
     }
 }

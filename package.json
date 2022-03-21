@@ -2,13 +2,22 @@
   "name": "nvea",
   "version": "1.0.0",
   "description": "Create command line tool",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Thebigbot",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^17.0.21"
-  }
+    "@types/node": "^17.0.21",
+    "tslib": "^2.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thebigbot0000/nvea.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Thebigbot0000/nvea/issues"
+  },
+  "homepage": "https://github.com/Thebigbot0000/nvea#readme"
 }

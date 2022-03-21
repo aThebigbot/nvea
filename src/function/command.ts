@@ -1,6 +1,6 @@
 import process from 'node:process';
 
-async function command(name: string, aliases: String[], callback: any) {
+const command = async (name: string, aliases: String[], callback: any) => {
     if (process.argv[2] == name || process.argv[2] && aliases[0] && aliases.includes(process.argv[2])) {
         let arr: String[] = []
         for (let I: number = 0; I < process.argv.length; I++) {
