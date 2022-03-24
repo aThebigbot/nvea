@@ -1,6 +1,6 @@
-import { Command } from "./src";
+import { Command } from './src/class/Command'
+import { args } from './src/function/args'
+import { argv } from './src/function/argv'
+import { command } from './src/function/command'
 
-new Command({ name: "--help", aliases: [] })
-.action((res:any) => {
-    
-})
+export { args, argv, command, Command }
