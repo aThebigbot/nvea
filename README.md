@@ -3,7 +3,7 @@
 Create cli nodejs app
 
 ```js
-import { Command } from "nvea/src";
+import { Command } from "nvea";
 
 new Command({ name: "help", aliases: ["h", "-h", "-help"] })
 .on((res, req) => {})
@@ -18,7 +18,7 @@ npm i nvea
 ### Import
 
 ```js
-/* ESM */ import { Command } from "nvea/src";
+/* ESM */ import { Command } from "nvea";
 
 /* CJS */ const { Command } = require("nvea");
 ```
