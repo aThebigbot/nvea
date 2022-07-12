@@ -7,7 +7,7 @@
 
 
 
-### Installation
+### 🔗 Installation
 
 ```shell
 npm i nvea
@@ -38,5 +38,5 @@ new Command({ name: 'name', aliases: ['cool-aliase-1', 'cool-aliase-2'] })
 ```
 
 ### 💙 10ks To
-@aThebigbot
+@aThebigbot  
 @NotGabry
