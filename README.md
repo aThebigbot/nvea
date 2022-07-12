@@ -1,13 +1,11 @@
-# nvea
+<div align="center">
 
-Create cli nodejs app
+#  `nvea`
 
-```js
-import { Command } from "nvea";
+🗂 CLI Commands Creator & Handler
+</div>
 
-new Command({ name: "help", aliases: ["h", "-h", "-help"] })
-.on((res, req) => {})
-```
+
 
 ### Installation
 
@@ -15,36 +13,30 @@ new Command({ name: "help", aliases: ["h", "-h", "-help"] })
 npm i nvea
 ```
 
-### Import
+### 📥 Imports
 
 ```js
-/* ESM */ import { Command } from "nvea";
+/* ESM */  
+import { Command } from 'nvea';
 
-/* CJS */ const { Command } = require("nvea");
+/* CJS */  
+const { Command } = require('nvea')
 ```
 
-### Create Command
+### 📤 Create Command
 
 ```js
-new Command({ name: "name", aliases: [] })
+new Command({ name: 'name', aliases: [] })
 .on((res, req) => { /*...*/ })
 ```
 
-### Aliases
+### 🎈 Aliases
 
 ```js
-new Command({ name: "name", aliases: ["cool-aliase-1", "cool-aliase-2"] })
+new Command({ name: 'name', aliases: ['cool-aliase-1', 'cool-aliase-2'] })
 .on((res, req) => { /*...*/ })
 ```
 
-
-### Options
-
-```js
-new Command({ name: "name", aliases: ["cool-aliase-1", "cool-aliase-2"] })
-.on((res, req) => { /*...*/ })
-```
-
-### More info
-
-Made by: Thebigbot0000, Gabry-76
+### 💙 10ks To
+@aThebigbot
+@NotGabry
